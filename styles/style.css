@@ -46,6 +46,9 @@ main>section{
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
+.section-title{
+    font-size: 2.8rem;
+}
 
 /* header styles */
 
@@ -104,14 +107,40 @@ main>section{
     margin-left: 130px;
     max-width: 530px;
 }
-.features-title{
-    font-size: 2.8rem;
-}
 #quick-list{
     font-weight: 500;
 }
 #of-our, #features{
     font-weight: 700;
+}
+/* some facts style */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
 }
 
 
@@ -120,12 +149,17 @@ main>section{
     .navbar, .nav-links, .team{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container, .facts-container{
         grid-template-columns: 1fr;
     }
     .our-features{
         margin-left: 20px;
     }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+
 }
 
 /* medium size device */
